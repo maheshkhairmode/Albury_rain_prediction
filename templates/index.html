@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAIN PREDICTION MODEL</title>
+</head>
+<body background="static/image7.jpg">
+    <h1> RAIN PREDICTION MODEL</h1>
+    <form method="POST" action="/rain_predict">
+
+        <tr>
+            <td>
+                <label>MinTemp:</label>
+                <input type="text" name="MinTemp">
+                </select>
+            </td>
+            
+            <td>
+                <label>MaxTemp:</label>
+                <input type="text" name="MaxTemp">
+                </select>
+            </td>
+
+            <td>
+                <label>Rainfall:</label>
+                <input type="text" name="Rainfall">
+                </select>
+            </td>
+
+            <td>
+                <label>WindGustSpeed:</label>
+                <input type="text" name="WindGustSpeed">
+                </select>
+            </td>
+
+            <td>
+                <label>WindSpeed9am:</label>
+                <input type="text" name="WindSpeed9am">
+                </select>
+            </td>
+            
+        </tr>
+
+        <br>
+        <br>
+
+        <tr>
+            <td>
+                <label>WindSpeed3pm:</label>
+                <input type="text" name="WindSpeed3pm">
+                </select>
+
+            </td>
+
+            <td>
+                <label>Humidity9am:</label>
+                <input type="text" name="Humidity9am">
+                </select>
+
+            </td>
+
+            <td>
+                <label>Humidity3pm:</label>
+                <input type="text" name="Humidity3pm">
+                </select>
+
+            </td>
+
+            <td>
+                <label>Pressure9am:</label>
+                <input type="text" name="Pressure9am">
+                </select>
+
+            </td>
+
+        <tr>
+
+        <br>
+        <br>
+         
+        <tr>
+
+            <td>
+                <label>Pressure3pm:</label>
+                <input type="text" name="Pressure3pm">
+                </select>
+
+            </td>
+
+         
+
+            <td>
+                <label>Cloud9am:</label>
+                <input type="text" name="Cloud9am">
+                </select>
+
+            </td>
+
+            <td>
+                <label>Cloud3pm:</label>
+                <input type="text" name="Cloud3pm">
+                </select>
+
+            </td>
+
+            <td>
+                <label>Temp9am:</label>
+                <input type="text" name="Temp9am">
+                </select>
+
+            </td>
+
+            <td>
+                <label>Temp3pm:</label>
+                <input type="text" name="Temp3pm">
+                </select>
+
+            </td>
+
+
+        </tr>
+
+        <br>
+        <br>
+
+
+        <tr>
+            <td>
+                <label>Location:</label>
+                <select name="Location">
+                    <option value="Albury">Albury</option>
+                    <option value="BadgerysCreek">BadgerysCreek</option>
+                </select>
+
+
+            </td>
+
+            <td>
+                <label>WindGustDir:</label>
+                <select name="WindGustDir">
+                    <option value="ENE">ENE</option>
+                    <option value="ESE">ESE</option>
+                    <option value="E">E</option>
+                    <option value="N">N</option>
+                    <option value="NE">NE</option>
+                    <option value="SE">SE</option>
+                    <option value="SW">SW</option>
+                </select>
+
+
+            </td>
+
+            <td>
+                <label>WindDir9am:</label>
+                <select name="WindDir9am">
+                    <option value="ENE">ENE</option>
+                    <option value="ESE">ESE</option>
+                    <option value="E">E</option>
+                    <option value="N">N</option>
+                    <option value="NE">NE</option>
+                    <option value="SE">SE</option>
+                    <option value="SW">SW</option>
+                </select>
+
+
+            </td>
+        </tr>
+
+        <br>
+        <br>
+
+         <input type="submit" value="SUBMIT">
+
+         <br>
+
+         <p>STATUS OF RAIN IS <b> {{prediction}}</b></p>
+
+        
+    </form>
+    
+</body>
+</html>
